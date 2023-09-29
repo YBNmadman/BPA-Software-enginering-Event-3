@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://cauegy200s0tl"]
+[gd_scene load_steps=5 format=3 uid="uid://cauegy200s0tl"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_qa77v"]
 
@@ -6,6 +6,8 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o0mn1"]
 size = Vector2(2, 2)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_pjbor"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -20,5 +22,11 @@ scale = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_o0mn1")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(3, 0)
+texture = SubResource("CanvasTexture_pjbor")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D2/StaticBody2D"]
+scale = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_o0mn1")
