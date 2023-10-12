@@ -17,4 +17,4 @@ func _process(delta):
 	if motion != Vector2(0, 0):
 		motion = motion.normalized() * speed * delta
 		position += motion
-		rotation = motion.angle()  # Set the sprite's rotation based on the motion direction
+		rotation = motion.angle()
