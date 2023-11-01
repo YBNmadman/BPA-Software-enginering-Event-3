@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://bsf03n0jmwk01"]
+
+[ext_resource type="Texture2D" uid="uid://c3pa2lp5plq0k" path="res://icon.svg" id="1_ulfrv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pjjps"]
+radius = 12.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n5kup"]
+size = Vector2(128, 104)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e5cm1"]
+size = Vector2(104, 128)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ulfrv")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-52, -52)
+shape = SubResource("CircleShape2D_pjjps")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(-52, 52)
+shape = SubResource("CircleShape2D_pjjps")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+position = Vector2(52, 52)
+shape = SubResource("CircleShape2D_pjjps")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="."]
+position = Vector2(52, -52)
+shape = SubResource("CircleShape2D_pjjps")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_n5kup")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_e5cm1")

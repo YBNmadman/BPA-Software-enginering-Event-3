@@ -1,0 +1,174 @@
+[gd_scene load_steps=24 format=3 uid="uid://b4ba0lh4ox4wh"]
+
+[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_kjug1"]
+[ext_resource type="Texture2D" uid="uid://c0h2668cn537q" path="res://Assets/steampunk-factory-district-60x60-v0-9.webp" id="2_2txiq"]
+[ext_resource type="PackedScene" uid="uid://bsf03n0jmwk01" path="res://scenes/character_body_2d.tscn" id="2_udt5d"]
+[ext_resource type="Texture2D" uid="uid://davy10v36prt0" path="res://Assets/steampunk-factory-district-60x60-v0-10.webp" id="3_dpeqq"]
+[ext_resource type="Texture2D" uid="uid://jmftjrubf4ko" path="res://Assets/steampunk-factory-district-60x60-v0-1.webp" id="4_dp4a8"]
+[ext_resource type="Texture2D" uid="uid://d4g4q2wdrrge8" path="res://Assets/steampunk-factory-district-60x60-v0-2.webp" id="5_ug7gi"]
+[ext_resource type="Texture2D" uid="uid://chn65nlutpj7l" path="res://Assets/steampunk-factory-district-60x60-v0-3.webp" id="6_78f14"]
+[ext_resource type="Texture2D" uid="uid://co8ijwqhoiy3r" path="res://Assets/steampunk-factory-district-60x60-v0-4.webp" id="7_xv1w3"]
+[ext_resource type="Texture2D" uid="uid://bklfw7erys2oy" path="res://Assets/steampunk-factory-district-60x60-v0-5.webp" id="8_pkgdd"]
+[ext_resource type="Texture2D" uid="uid://bmaun7jek201p" path="res://Assets/steampunk-factory-district-60x60-v0-6.webp" id="9_86yqb"]
+[ext_resource type="Texture2D" uid="uid://65if55i5v50q" path="res://Assets/steampunk-factory-district-60x60-v0-7.webp" id="10_jyr75"]
+[ext_resource type="Texture2D" uid="uid://bxcv8is8ao8w5" path="res://Assets/steampunk-factory-district-60x60-v0-8.webp" id="11_anl0w"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_esk3t"]
+texture = ExtResource("2_2txiq")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iy0jq"]
+texture = ExtResource("3_dpeqq")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oppdt"]
+texture = ExtResource("4_dp4a8")
+texture_region_size = Vector2i(1, 1)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+5:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+9:1/0 = 0
+8:1/0 = 0
+7:1/0 = 0
+6:1/0 = 0
+5:1/0 = 0
+4:1/0 = 0
+3:1/0 = 0
+2:1/0 = 0
+1:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+8:3/0 = 0
+7:3/0 = 0
+6:3/0 = 0
+5:3/0 = 0
+4:3/0 = 0
+3:3/0 = 0
+2:3/0 = 0
+1:4/0 = 0
+0:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+7:5/0 = 0
+6:5/0 = 0
+5:5/0 = 0
+4:5/0 = 0
+3:5/0 = 0
+2:5/0 = 0
+1:5/0 = 0
+0:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+9:5/0 = 0
+1:3/0 = 0
+0:1/0 = 0
+0:3/0 = 0
+8:5/0 = 0
+9:4/0 = 0
+9:3/0 = 0
+9:2/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+9:8/0 = 0
+8:8/0 = 0
+7:8/0 = 0
+6:8/0 = 0
+5:8/0 = 0
+4:8/0 = 0
+3:8/0 = 0
+2:8/0 = 0
+1:8/0 = 0
+0:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_opydd"]
+texture = ExtResource("5_ug7gi")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rwbs4"]
+texture = ExtResource("6_78f14")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7tplc"]
+texture = ExtResource("7_xv1w3")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p53km"]
+texture = ExtResource("8_pkgdd")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_68eav"]
+texture = ExtResource("9_86yqb")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c0h26"]
+texture = ExtResource("10_jyr75")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pim6t"]
+texture = ExtResource("11_anl0w")
+
+[sub_resource type="TileSet" id="TileSet_hb5sr"]
+tile_size = Vector2i(10, 10)
+sources/2 = SubResource("TileSetAtlasSource_oppdt")
+sources/3 = SubResource("TileSetAtlasSource_opydd")
+sources/4 = SubResource("TileSetAtlasSource_rwbs4")
+sources/5 = SubResource("TileSetAtlasSource_7tplc")
+sources/6 = SubResource("TileSetAtlasSource_p53km")
+sources/7 = SubResource("TileSetAtlasSource_68eav")
+sources/8 = SubResource("TileSetAtlasSource_c0h26")
+sources/9 = SubResource("TileSetAtlasSource_pim6t")
+sources/10 = SubResource("TileSetAtlasSource_esk3t")
+sources/11 = SubResource("TileSetAtlasSource_iy0jq")
+tile_proxies/source_level = [0, 0]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_kjug1")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_hb5sr")
+cell_quadrant_size = 32
+format = 2
+layer_0/tile_data = PackedInt32Array(-1245070, 0, 0, -262149, 2, 0, -196613, 2, 1, -131077, 2, 2, -65541, 2, 3, -5, 2, 4, 65531, 2, 5, 131067, 2, 6, 196603, 2, 7, 262139, 2, 8, 327675, 2, 9, -262148, 65538, 0, -196612, 65538, 1, -131076, 65538, 2, -65540, 65538, 3, -4, 65538, 4, 65532, 65538, 5, 131068, 65538, 6, 196604, 65538, 7, 262140, 65538, 8, 327676, 65538, 9, -262147, 131074, 0, -196611, 131074, 1, -131075, 131074, 2, -65539, 131074, 3, -3, 131074, 4, 65533, 131074, 5, 131069, 131074, 6, 196605, 131074, 7, 262141, 131074, 8, 327677, 131074, 9, -262146, 196610, 0, -196610, 196610, 1, -131074, 196610, 2, -65538, 196610, 3, -2, 196610, 4, 65534, 196610, 5, 131070, 196610, 6, 196606, 196610, 7, 262142, 196610, 8, 327678, 196610, 9, -262145, 262146, 0, -196609, 262146, 1, -131073, 262146, 2, -65537, 262146, 3, -1, 262146, 4, 65535, 262146, 5, 131071, 262146, 6, 196607, 262146, 7, 262143, 262146, 8, 327679, 262146, 9, -327680, 327682, 0, -262144, 327682, 1, -196608, 327682, 2, -131072, 327682, 3, -65536, 327682, 4, 0, 327682, 5, 65536, 327682, 6, 131072, 327682, 7, 196608, 327682, 8, 262144, 327682, 9, -327679, 393218, 0, -262143, 393218, 1, -196607, 393218, 2, -131071, 393218, 3, -65535, 393218, 4, 1, 393218, 5, 65537, 393218, 6, 131073, 393218, 7, 196609, 393218, 8, 262145, 393218, 9, -327678, 458754, 0, -262142, 458754, 1, -196606, 458754, 2, -131070, 458754, 3, -65534, 458754, 4, 2, 458754, 5, 65538, 458754, 6, 131074, 458754, 7, 196610, 458754, 8, 262146, 458754, 9, -327677, 524290, 0, -262141, 524290, 1, -196605, 524290, 2, -131069, 524290, 3, -65533, 524290, 4, 3, 524290, 5, 65539, 524290, 6, 131075, 524290, 7, 196611, 524290, 8, 262147, 524290, 9, -327676, 589826, 0, -262140, 589826, 1, -196604, 589826, 2, -131068, 589826, 3, -65532, 589826, 4, 4, 589826, 5, 65540, 589826, 6, 131076, 589826, 7, 196612, 589826, 8, 262148, 589826, 9, -589843, 2, 0, -524307, 2, 1, -458771, 2, 2, -393235, 2, 3, -327699, 2, 4, -262163, 2, 5, -196627, 2, 6, -131091, 2, 7, -65555, 2, 8, -19, 2, 9, -589842, 65538, 0, -524306, 65538, 1, -458770, 65538, 2, -393234, 65538, 3, -327698, 65538, 4, -262162, 65538, 5, -196626, 65538, 6, -131090, 65538, 7, -65554, 65538, 8, -18, 65538, 9, -589841, 131074, 0, -524305, 131074, 1, -458769, 131074, 2, -393233, 131074, 3, -327697, 131074, 4, -262161, 131074, 5, -196625, 131074, 6, -131089, 131074, 7, -65553, 131074, 8, -17, 131074, 9, -589840, 196610, 0, -524304, 196610, 1, -458768, 196610, 2, -393232, 196610, 3, -327696, 196610, 4, -262160, 196610, 5, -196624, 196610, 6, -131088, 196610, 7, -65552, 196610, 8, -16, 196610, 9, -589839, 262146, 0, -524303, 262146, 1, -458767, 262146, 2, -393231, 262146, 3, -327695, 262146, 4, -262159, 262146, 5, -196623, 262146, 6, -131087, 262146, 7, -65551, 262146, 8, -15, 262146, 9, -589838, 327682, 0, -524302, 327682, 1, -458766, 327682, 2, -393230, 327682, 3, -327694, 327682, 4, -262158, 327682, 5, -196622, 327682, 6, -131086, 327682, 7, -65550, 327682, 8, -14, 327682, 9, -589837, 393218, 0, -524301, 393218, 1, -458765, 393218, 2, -393229, 393218, 3, -327693, 393218, 4, -262157, 393218, 5, -196621, 393218, 6, -131085, 393218, 7, -65549, 393218, 8, -13, 393218, 9, -589836, 458754, 0, -524300, 458754, 1, -458764, 458754, 2, -393228, 458754, 3, -327692, 458754, 4, -262156, 458754, 5, -196620, 458754, 6, -131084, 458754, 7, -65548, 458754, 8, -12, 458754, 9, -589835, 524290, 0, -524299, 524290, 1, -458763, 524290, 2, -393227, 524290, 3, -327691, 524290, 4, -262155, 524290, 5, -196619, 524290, 6, -131083, 524290, 7, -65547, 524290, 8, -11, 524290, 9, -589834, 589826, 0, -524298, 589826, 1, -458762, 589826, 2, -393226, 589826, 3, -327690, 589826, 4, -262154, 589826, 5, -196618, 589826, 6, -131082, 589826, 7, -65546, 589826, 8, -10, 589826, 9)
+
+[node name="Player" parent="." instance=ExtResource("2_udt5d")]
+script = ExtResource("1_kjug1")
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+ignore_rotation = false
